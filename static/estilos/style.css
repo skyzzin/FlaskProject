@@ -45,6 +45,9 @@
     font-size: 20pt;
     color: white;
 }
+.mn-drop{
+    display: none;
+}
 .sign button:hover{
     cursor: pointer;
     font-weight: 550;
@@ -108,4 +111,53 @@
     top: 50%;
     transform: translate(-50%, -50%);
     
+}
+
+
+@media(max-width:800px){
+.header{
+    display: flex;
+  
+}
+.header .user{
+    width: 100px;
+    height: 100px;
+}
+.sign{
+    display: none;  
+    flex-direction: column;
+    height: 150px;
+    border: 3px solid white;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    top: 130px;
+}
+
+.dropbox {
+    display: flex;
+    width: 60px;
+    height: 80px;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+    right:50px
+}
+.dropbox span{
+    width: 60px;
+    height: 10px;
+    background: black;
+    border-radius: 5px;
+}
+.mn-drop:checked ~ .sign{
+    display: flex;
+}
+.aviso{
+    font-size: 12pt;
+    margin-left: 190px;
+}
+main{
+    display: flex;
+    align-content: center;
+}
 }

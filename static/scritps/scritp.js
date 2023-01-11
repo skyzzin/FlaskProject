@@ -38,39 +38,36 @@ btncad.addEventListener('click',function(){
     }
 })
 
-subcad.disabled=false
-subcad.addEventListener('click',function(){
+
+subcad.addEventListener('click',function(e){
+    
     if(cnome.value != ''){
-        cnome.style.border='2px solid green'
+        cnome.style.border='1px solid green'
         if(senha1.value != ''){
-            senha1.style.border='2px solid green'
+            senha1.style.border='1px solid green'
             if(senha2.value != ''){
-                senha2.style.border='2px solid green'
+                senha2.style.border='1px solid green'
                 if(senha1.value != senha2.value){
-                    console.log('erro')
-                    subcad.disabled=true
-                    titlehp.textContent='Erro'
+                    alert('As Senhas Não Estão iguais')
+                    senha2.style.border='1px solid red'
+                    e.preventDefault()   
                 }
                 else{
-                    
-                    titlehp.textContent=cnome.value,senha1.value,senha2.value
-                } subcad.disabled=false
-
-                
+                    console.log('Sucesso')
+                }
             }
             else{
-                senha2.style.border='2px solid red'
-                
+                senha2.style.border='1px solid red'
+                e.preventDefault()
             }
         }
         else{
-            senha1.style.border='2px solid red'
+            senha1.style.border='1px solid red'
+            e.preventDefault()
         }
     }
     else{
-        cnome.style.border='2px solid red'
+        cnome.style.border='1px solid red'
+        e.preventDefault()
     }
 })
-
-
-

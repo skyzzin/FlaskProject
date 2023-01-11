@@ -3,6 +3,8 @@ from MyLib.SimpleCrud import *
 
 app = Flask(__name__)
 
+
+
 @app.route('/')
 def Start():
     return render_template('index.html')
@@ -40,7 +42,13 @@ def delete():
     DeleteDB(nome,senha)
     return f"Conta deletada"
     
-       
+@app.route('/perfil')
+def pefil():
+    
+    return render_template('perfil.html')
+
+
+    
         
         
    
