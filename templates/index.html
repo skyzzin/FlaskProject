@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SistemCaixaUi</title>
+    <link rel="stylesheet" href="../static/estilos/style.css">
+    <script src="/static/scritps/scritp.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="user">
+
+        </div>
+
+        <div class="sign">
+            <div class="login">
+                <button id="login">Login</button>
+            </div>
+
+            <div class="cadastro">
+                <button id="cad" >Cadastro</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="menus">
+
+       
+        <form class="loginMenu " action="/login/Checked=true" method="post">
+            <h1>Login</h1> <br>
+             <input type="text" name="nome" id="nome" placeholder="nome de usuario">
+             <input type="password" name="senha" id="senha" placeholder="senha de usuario">
+             <button type="submit" id="sublogin">Login</button>
+        </form>
+
+        <form class="cadMenu " action="/cad" method="post">
+            <h1>Cadastro</h1>
+            <input type="text" name="nome" id="cnome" placeholder="nome de usuario" >
+            <input type="password" name="senha1" id="senha1" placeholder="senha de usuario">
+            <input type="password" name="senha2" id="senha2" placeholder="Repita a Senha">
+            <button type='submit' id="subcad" >Registrar</button>
+        </form>
+    </div>
+
+
+    <h1 class="aviso">Faça o Login Para Usar o Sistema Operacional</h1>
+    </main>
+   
+
+</body>
+</html>
