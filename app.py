@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,jsonify,url_for
+from flask import Flask,render_template,request
 from MyLib.SimpleCrud import *
 
 app = Flask(__name__)
@@ -8,6 +8,10 @@ app = Flask(__name__)
 @app.route('/')
 def Start():
     return render_template('index.html')
+
+@app.route('/homepage')
+def homepage():
+    return render_template('HomePage.html')
 
 @app.route('/cad', methods=["POST"])
 def Cad():
@@ -44,8 +48,16 @@ def delete():
     
 @app.route('/perfil')
 def pefil():
-    
     return render_template('perfil.html')
+
+@app.route('/produtos')
+def produtos():
+    return render_template('produtos.html')
+
+@app.route('/addproduto', methods=["POST"])
+def addproduto():
+
+    return render_template('addproduto.html')
 
 
     
