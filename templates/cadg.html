@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"><h1>Login</h1></div>
-        <form id="logar" action="/login" method="post">
-            <input type="text" placeholder="Nome:" required name="lnome">
-            <input type="password" placeholder="Senha:" required name="lsenha">
-            <button type="submit" class="button">Logar</button>
+        <div class="header"><h1>Cadastro Gerente</h1></div>
+        <form id="logar" action="/cadastrar/gadd" method="post">
+            <input type="text" name="cnome" placeholder="Nome">
+            <input type="password" name="csenha" placeholder="Senha">
+           <button type="submit" class="btn">Cadastrar</button>
         </form>
         <nav>
-            <a href="/cadastrar">Cadastrar</a>
+            <a href="/">Voltar</a>
         </nav>
     </div>
 </body>

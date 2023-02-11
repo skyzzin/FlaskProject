@@ -14,3 +14,4 @@ document.querySelector('#btncadastrar')
     formcadastrar.style.left = "25px"
     btcolor.style.left = "110px"
 })
+

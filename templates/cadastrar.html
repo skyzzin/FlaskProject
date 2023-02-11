@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="../static/login.css">
+    <script src="../static/cad.js" defer></script>
 </head>
 <body>
-    <div class="containercadastrar">
-        <div class="header"><h1>Cadastrar</h1></div>
-        <form id="cadastrar">
-            <input type="text" placeholder="Nome:" required>
-            <input type="password" placeholder="Senha:" required>
-            <input type="password" placeholder="Senha de acesso:" required>
-            <div class="bt-cadastrar">
-                <button id="cd-gerent">Cadastrar Gerente</button>
-                <button id="cd-fc">Cadastrar Funcionario</button>
-                <button id="cd-dn">Cadastrar Dono</button>
-            </div>
+    <div class="container">
+        <div class="header"><h1>Cadastro</h1></div>
+        <form id="logar" action="/login" method="post">
+           <a href="/cadastrar/gerente" class="btn">Gerente</a>
+           <a href="/cadastrar/funcionario" class="btn">Funcionario</a>
         </form>
         <nav>
-            <a href="/">voltar</a>
+            <a href="/">Voltar</a>
         </nav>
     </div>
 </body>
