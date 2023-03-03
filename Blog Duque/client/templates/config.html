@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Config</title>
+    <link rel="stylesheet" href="/static/css/config.css">
+    <link rel="stylesheet" href="/static/css/CadastroLogin.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/user/{{session['nome']}}" style="text-decoration: none;"><h1>Configurações</h1></a>
+    </header>
+
+    <main class="main">
+        
+        <form action="/config" method="post" class="container">
+            <div class="img-avatar">
+            <label for="avatar">Imagem De Perfil</label>
+            <label for="avatar" class='avatar'></label>
+            <p>Clique No Circulo Branco Parar Escolher a Foto Para Seu Avatar</p>
+            <input type="file" name="" id="avatar" style="display: none;">
+            </div>
+
+        <div>
+            <a href="/trocar" id="senha">Redefinir Senha</a>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
